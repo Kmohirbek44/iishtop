@@ -1,0 +1,38 @@
+[
+{
+    "model": "scraping.urls",
+    "pk": 1,
+    "fields": {
+        "city": 1,
+        "language": 1,
+        "data": "{\"hh\": \"https://tashkent.hh.uz/search/vacancy?clusters=true&area=2759&ored_clusters=true&order_by=publication_time&enable_snippets=true&salary=&st=searchVacancy&text=python\", \"ishkop\": \"https://ishkop.uz/vacansii?q=python&l=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442&df=3\", \"uzjobble\": \"https://uz.jooble.org/SearchResult?p=4&rgns=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442&ukw=python\"}"
+    }
+},
+{
+    "model": "scraping.urls",
+    "pk": 3,
+    "fields": {
+        "city": 1,
+        "language": 2,
+        "data": "{\"hh\": \"https://tashkent.hh.uz/search/vacancy?text=Java&from=suggest_post&salary=&clusters=true&area=2759&ored_clusters=true&order_by=publication_time&enable_snippets=true\", \"ishkop\": \"https://ishkop.uz/vacansii?q=Java&l=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442\", \"uzjobble\": \"https://uz.jooble.org/SearchResult?ukw=java&rgns=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442\"}"
+    }
+},
+{
+    "model": "scraping.urls",
+    "pk": 4,
+    "fields": {
+        "city": 1,
+        "language": 3,
+        "data": "{\"hh\": \"https://tashkent.hh.uz/search/vacancy?text=Android+\\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u0447\\u0438\\u043a&from=suggest_post&salary=&clusters=true&area=2759&ored_clusters=true&order_by=publication_time&enable_snippets=true\", \"ishkop\": \"https://ishkop.uz/vacansii?q=Android+\\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u0447\\u0438\\u043a&l=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442\", \"uzjobble\": \"https://uz.jooble.org/SearchResult?ukw=android+\\u0440\\u0430\\u0437\\u0440\\u0430\\u0431\\u043e\\u0442\\u0447\\u0438\\u043a&rgns=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442\"}"
+    }
+},
+{
+    "model": "scraping.urls",
+    "pk": 5,
+    "fields": {
+        "city": 1,
+        "language": 4,
+        "data": "{\"hh\": \"https://tashkent.hh.uz/search/vacancy?text=Javascript&from=suggest_post&salary=&clusters=true&area=2759&ored_clusters=true&order_by=publication_time&enable_snippets=true\", \"ishkop\": \"https://ishkop.uz/vacansii?q=Javascript&l=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442\", \"uzjobble\": \"https://uz.jooble.org/SearchResult?ukw=javascript&rgns=\\u0422\\u0430\\u0448\\u043a\\u0435\\u043d\\u0442\"}"
+    }
+}
+]
