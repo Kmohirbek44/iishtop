@@ -1,10 +1,1 @@
-[
-{
-    "model": "scraping.city",
-    "pk": 1,
-    "fields": {
-        "name": "Tashkent",
-        "slug": "tashkent"
-    }
-}
-]
+[{"model": "scraping.city", "pk": 1, "fields": {"name": "Tashkent", "slug": "tashkent"}}, {"model": "scraping.city", "pk": 2, "fields": {"name": "Samarqand", "slug": "samarqand"}}, {"model": "scraping.city", "pk": 3, "fields": {"name": "Buxoro", "slug": "buxoro"}}, {"model": "scraping.city", "pk": 4, "fields": {"name": "Andijon", "slug": "andijon"}}, {"model": "scraping.city", "pk": 13, "fields": {"name": "Surxondaryo", "slug": "surxondaryo"}}, {"model": "scraping.city", "pk": 14, "fields": {"name": "Farg'ona", "slug": "farg'ona"}}, {"model": "scraping.city", "pk": 15, "fields": {"name": "Guliston", "slug": "guliston"}}]
