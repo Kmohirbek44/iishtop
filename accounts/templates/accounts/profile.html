@@ -60,10 +60,16 @@
 
                 </div>
             </form>
-            <br>
+            {%if resume_check%}
+                  <br>
              <div>
-              <a href="{%url 'scraping:resume_edit'%}" class='btn btn-primary'>Resume yaratish</a>
+              <a href="{%url 'scraping:resume_edit'%}" class='btn btn-primary'>Resume o'zgartirish</a>
 
+            {%else%}
+                 <br>
+             <div>
+              <a href="{%url 'scraping:resume_create'%}" class='btn btn-primary'>Resume yaratish</a>
+             {%endif%}
 
         </div>
 
@@ -126,3 +132,4 @@
         </div>
 
 {% endblock %}
+
