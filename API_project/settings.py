@@ -29,7 +29,7 @@ SECRET_KEY ='django-insecure-!2bk-5=(9zv)ysu4nsq*dd6%ug%hj5+5jb9a)omt(%hdov00p9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['64.227.65.211', 'localhost', '127.0.0.1', 'iishtop.uz', 'www.iishtop.uz']
+ALLOWED_HOSTS = ['64.227.65.211','urchin-app-5ss4k.ondigitalocean.app', 'localhost', '127.0.0.1', 'iishtop.uz', 'www.iishtop.uz']
 
 
 # Application definition
