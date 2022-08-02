@@ -77,7 +77,10 @@
 <div class="card" style="margin-top:30px;">
 
   <div class="card-body">
+      {%if v.title%}
     <h5 class="card-title">{{v.title}}</h5>
+      {%endif%}
+      <p class="card-title">{{v.salary}}</p>
     <p class="card-text">{{v.description}}</p>
       <p>{{v.timestap|date:'Y-m-d'}}</p>
     <a href="{{v.url}}" class="btn btn-primary">Ish joyi havolasi</a>

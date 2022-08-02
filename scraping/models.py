@@ -1,6 +1,8 @@
+import uuid
+
 import jsonfield
 from django.db import models
-from .validators import validate_file_size
+
 
 from .utils import from_cryillic_to_eng
 def default_urls():
@@ -37,8 +39,9 @@ class Language(models.Model):
         super().save(*args,**kwargs)
 class Vakation(models.Model):
     url=models.URLField(verbose_name='url')
-    title=models.CharField(max_length=200,unique=True)
+    title=models.CharField(max_length=100,default=uuid.uuid4,null=True , blank=True)
     company=models.CharField(max_length=200,blank=True)
+    salary=models.CharField(max_length=200,blank=True)
     description=models .TextField(blank=True)
     city=models.ForeignKey('City',on_delete=models.CASCADE,blank=True)
     language=models.ForeignKey('Language',on_delete=models.CASCADE,blank=True)
@@ -79,6 +82,5 @@ class Resume(models.Model):
 
 class Document(models.Model):
     description = models.CharField(max_length=256, blank=True)
-    document =models.FileField(validators=[validate_file_size])
-
+    document = models.FileField(upload_to='documents/')
     uploaded_at = models.DateTimeField(auto_now_add=True)

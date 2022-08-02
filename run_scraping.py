@@ -1,7 +1,7 @@
-
 import asyncio
 import os, sys
 
+import asyncio as asyncio
 from django.contrib.auth import get_user_model
 from django.db import DatabaseError
 
@@ -19,10 +19,11 @@ from scraping.parsers import *
 
 parser = (
     (hh, 'hh'),
-
+    (ishkop, 'ishkop'),
+    (uzjobble, 'uzjobble'),
 
 )
-jobs, errors = [], []
+jobs = []
 
 User = get_user_model()
 
@@ -48,26 +49,25 @@ def get_urls(_settings):
 
 
 async def main(value):
-    func, url, city, language = value
-    job, err = await loop.run_in_executor(None, func, url, city, language)
+
+    func , url, city, language = value
+    job = await loop.run_in_executor(None, func, url, city, language)
     jobs.extend(job)
-    errors.extend(err)
 
 
 a = get_user()
 get_url = get_urls(a)
-loop = asyncio.run()
+loop = asyncio.new_event_loop()
 tmp_tasks = [(func, data['data'][key], data['city'], data['language'])
              for data in get_url for func, key in parser]
+
+
 tasks = asyncio.wait([loop.create_task(main(f)) for f in tmp_tasks])
 loop.run_until_complete(tasks)
 loop.close()
 for job in jobs:
 
-    v = scraping.models.Vakation(**job)
-
-    try:
+    if isinstance(job,dict):
+        v = scraping.models.Vakation(**job)
         v.save()
-    except DatabaseError:
-        pass
 
