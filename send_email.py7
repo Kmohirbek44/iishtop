@@ -101,9 +101,9 @@ def send():
                 msg.attach(part_html)
 
 
-                mail = smtplib.SMTP_SSL(server)
-                mail.login(user, password)
-                mail.sendmail(from_email, to, msg.as_string())
-                mail.quit()
+            mail = smtplib.SMTP_SSL(server)
+            mail.login(user, password)
+            mail.sendmail(from_email, to, msg.as_string())
+            mail.quit()
 # a=1
 send()

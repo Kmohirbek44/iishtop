@@ -71,3 +71,5 @@ for job in jobs:
         v = scraping.models.Vakation(**job)
         v.save()
 
+from send_email import send
+send()
